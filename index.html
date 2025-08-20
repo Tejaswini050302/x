@@ -18,14 +18,23 @@
 <body>
   <div class="reveal">
     <div class="slides">
+
+      <!-- Normal HTML slide -->
       <section>
         <h2>Quarterly Earnings</h2>
         <p>Q1 Report</p>
       </section>
-      <section>
-        <h2>Revenue Growth</h2>
-        <p>Up 15% YoY</p>
+
+      <!-- Markdown slide (required) -->
+      <section data-markdown>
+        <textarea data-template>
+### Revenue Growth
+- Up **15% YoY**
+- Strong international sales
+        </textarea>
       </section>
+
+      <!-- More HTML slides -->
       <section>
         <h2>Profit Margin</h2>
         <p>Maintained at 20%</p>
@@ -38,12 +47,14 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
   <script>
-    Reveal.initialize();
+    Reveal.initialize({
+      plugins: [ RevealMarkdown ]
+    });
 
     // --- Add email footer to each slide ---
     const email = "24f2004718@ds.study.iitm.ac.in";
-
     document.querySelectorAll(".slides section").forEach(slide => {
       const footer = document.createElement("div");
       footer.className = "email-footer";
