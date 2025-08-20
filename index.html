@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title Slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <h3>Q2 2025</h3>
+          <footer><small>24f2004718@ds.study.iitm.ac.in</small></footer>
+          <aside class="notes">
+            Welcome stakeholders. Today we’ll go through the quarterly earnings highlights.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+# Key Highlights
+- Revenue Growth: **15% YoY**
+- Net Profit: **$120M**
+- EPS: **$2.35**
+<footer><small>24f2004718@ds.study.iitm.ac.in</small></footer>
+          </textarea>
+          <aside class="notes">
+            This slide summarizes our key financial highlights.
+          </aside>
+        </section>
+
+        <!-- Animated fragments -->
+        <section>
+          <h2>Revenue Breakdown</h2>
+          <ul>
+            <li class="fragment">Retail Banking: $60M</li>
+            <li class="fragment">Investment Banking: $40M</li>
+            <li class="fragment">Asset Management: $20M</li>
+          </ul>
+          <footer><small>24f2004718@ds.study.iitm.ac.in</small></footer>
+          <aside class="notes">
+            Click to reveal each revenue stream with fragments.
+          </aside>
+        </section>
+
+        <!-- Code Sample -->
+        <section>
+          <h2>Code Example</h2>
+          <pre><code class="language-python">
+def earnings_per_share(net_income, shares_outstanding):
+    return net_income / shares_outstanding
+
+print(earnings_per_share(120000000, 51000000))  # ~2.35
+          </code></pre>
+          <footer><small>24f2004718@ds.study.iitm.ac.in</small></footer>
+          <aside class="notes">
+            This Python snippet shows the EPS calculation.
+          </aside>
+        </section>
+
+        <!-- Math Formula -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>\[
+            EPS = \frac{Net\ Income}{Shares\ Outstanding}
+          \]</p>
+          <footer><small>24f2004718@ds.study.iitm.ac.in</small></footer>
+          <aside class="notes">
+            EPS is one of the key performance metrics.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+      });
+    </script>
+  </body>
+</html>
